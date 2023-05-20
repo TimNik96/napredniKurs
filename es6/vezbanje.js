@@ -74,4 +74,4 @@ let zaposleni = [
 // 2. Mapirati zaposlene koji imaju platu vecu od 200000 dinara. (u objektu treba da bude samo ime, senioritet i plata)
 
 
-console.log(zaposleni.filter(el => el.plata > 200000).map(radnik => { return {ime: radnik.ime, senioritet: radnik.senioritet, plata: radnik.plata}}))
+// console.log(zaposleni.filter(el => el.plata > 200000).map(radnik => { return {ime: radnik.ime, senioritet: radnik.senioritet, plata: radnik.plata}}))
