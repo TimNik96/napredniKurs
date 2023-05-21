@@ -81,10 +81,11 @@ main section {
     column-gap: 2rem;
 }
 
-.picture img {
+.picture img, .lastSection img {
     border: 1px solid #888;
     padding: .5rem;
     border-radius: 50%;
+    width: 450px;
 }
 
 .content {
@@ -104,4 +105,18 @@ main section {
     border-color: #fff;
 }
 
+.lastSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
 
+.lastSection h2 {
+    font-size: 2rem;
+}
+
+.lastSection .content {
+    align-items: center;
+}
