@@ -6,7 +6,7 @@ GIT COMMANDS
 git init
 git config user.name 
 git config user.email
-git config -g user.name "name"
+git config --global user.name "name"
 git config --global user.email "mail"
 git clone URL
 git status

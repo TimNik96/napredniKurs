@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+            margin: 2% auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 3rem .5rem;
+            grid-template-areas:
+                "Grupa-A Grupa-B"
+                "Grupa-C Grupa-D"
+                "Grupa-E Grupa-F"
+                "Grupa-G Grupa-H";
+        }
+
+        .Grupa-A {
+            grid-area: Grupa-A;
+        }
+
+        .Grupa-B {
+            grid-area: Grupa-B;
+            
+        }
+
+        .Grupa-C {
+            grid-area: Grupa-C;
+        }
+
+        .Grupa-D {
+            grid-area: Grupa-D;
+        }
+
+        .Grupa-E {
+            grid-area: Grupa-E;
+        }
+
+        .Grupa-F {
+            grid-area: Grupa-F;
+        }
+
+        .Grupa-G {
+            grid-area: Grupa-G;
+        }
+
+        .Grupa-H {
+            grid-area: Grupa-H;
+        }
+
+        .stajling {
+            background-color: #00000080;
+            width: 90%;
+            /* justify-self: center;
+            align-self: center; */
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Grupa-A stajling">
+            <h1>Grupa A</h1>
+            <p>Katar</p>
+            <p>Holandija</p>
+            <p>Senegal</p>
+            <p>Ekvador</p>
+        </div>
+        <div class="Grupa-B stajling">
+            <h1>Grupa B</h1>
+            <p>Engleska</p>
+            <p>SAD</p>
+            <p>Iran</p>
+            <p>Evropski plej-of</p>
+        </div>
+        <div class="Grupa-C stajling">
+            <h1>Grupa C</h1>
+            <p>Argentina</p>
+            <p>Meksiko</p>
+            <p>Poljska</p>
+            <p>Saudijska Arabija</p>
+        </div>
+        <div class="Grupa-D stajling">
+            <h1>Grupa D</h1>
+            <p>Francuska</p>
+            <p>Danska</p>
+            <p>Tunis</p>
+            <p>Kontinentalni plej-of</p>
+        </div>
+        <div class="Grupa-E stajling">
+            <h1>Grupa E</h1>
+            <p>Spanija</p>
+            <p>Nemacka</p>
+            <p>Japan</p>
+            <p>Kontinentalni plej-of</p>
+        </div>
+        <div class="Grupa-F stajling">
+            <h1>Grupa F</h1>
+            <p>Belgija</p>
+            <p>Hrvatska</p>
+            <p>Maroko</p>
+            <p>Kanada</p>
+        </div>
+        <div class="Grupa-G stajling">
+            <h1>Grupa G</h1>
+            <p>Brazil</p>
+            <p>Svajcarska</p>
+            <p>Srbija</p>
+            <p>Kamerun</p>
+        </div>
+        <div class="Grupa-H stajling">
+            <h1>Grupa H</h1>
+            <p>Portugal</p>
+            <p>Urugvaj</p>
+            <p>Koreja</p>
+            <p>Gana</p>
+        </div>
+    </div>
+</body>
+
+</html>
