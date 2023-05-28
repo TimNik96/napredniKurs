@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" enctype="multipart/form-data">
+        <div>
+            <label for="user">Username:</label>
+            <input type="text" name="username" id="user" placeholder="e.g. mojUser" required>
+        </div>
+        <div>
+            <label for="pass">Password:</label>
+            <input type="password" name="password" id="pass">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="phoneNumber">Handy number:</label>
+            <input type="tel" name="handy" id="phoneNumber">
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" max="50" step="5"> 
+        </div>
+        <div>
+            <label for="date">Birthday:</label>
+            <input type="date" name="birthday" id="date" min="2022-01-01" max="">
+        </div>
+        <div>
+            <label for="time">Time:</label>
+            <input type="time" name="time" id="time">
+        </div>
+        <div>
+            <label for="eyeColor">Eye color:</label>
+            <input type="color" name="eyes" id="eyeColor">
+        </div>
+        <div>
+            <label for="genderMale">Male</label>
+            <input type="radio" name="gender" id="genderMale">
+            <label for="genderFemale">Female</label>
+            <input type="radio" name="gender" id="genderFemale">
+        </div>
+        <div>
+            <label for="banane">Banane</label>
+            <input type="checkbox" name="banane" id="banane">
+            <label for="kruske">Kruske</label>
+            <input type="checkbox" name="kruske" id="kruske">
+        </div>
+        <div>
+            <label for="cv">Upload file:</label>
+            <input type="file" id="cv" style="visibility: hidden;">
+        </div>
+        <select name="chosenCar" id="cars">
+            <option value="default" disabled selected>Choose a car...</option>
+            <optgroup label="German">
+                <option value="benz">Mercedes</option>
+                <option value="audi">Audi</option>
+                <option value="porsche">Porsche</option>
+            </optgroup>
+            <optgroup label="Japanese">
+                <option value="Mazda">Mazda</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Subaru">Subaru</option>
+            </optgroup>
+        </select>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="Moje dugme">
+        <input type="reset" value="Reset">
+        <fieldset>
+            <legend>Info</legend>
+            <div>
+                <label for="userName">Name:</label>
+                <input type="text" id="userName" placeholder="type in username" required>
+            </div>
+            <div>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" placeholder="your pass">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
