@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    background-image: url("./pictures/Nikola\ Timotic\ -\ banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* padding: 3rem 0; */
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header::after {
+    content: '';
+    background-color: #00000088;
+    width: 100%;
+    height: 100%;
+} */
+
+.filter {
+    background-color: #00000088;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+header section {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+    color: #fff;
+}
+
+header section h1 {
+    font-size: 3rem;
+}
+
+header section p {
+    width: 50%;
+    text-align: center;
+}
+
+.btn {
+    width: fit-content;
+    color: #fff;
+    background-color: #10a4fa;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all .3s ease;
+}
+
+.reverse-btn {
+    color: #10a4fa;
+    background-color: #fff;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    /* border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px; */
+    transform: scale(1.05);
+}
+
+main section {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.picture img, .lastSection img {
+    border: 1px solid #888;
+    padding: .5rem;
+    border-radius: 50%;
+    width: 350px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.5rem;
+}
+
+.reverse {
+    background-color: #10a4fa;
+    color: #fff;
+    flex-direction: row-reverse;
+}
+
+.reverse img {
+    border-color: #fff;
+}
+
+.lastSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.lastSection h2 {
+    font-size: 2rem;
+}
+
+.lastSection .content {
+    align-items: center;
+}
+
+footer {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.svg-container {
+    border: 5px solid #888;
+    border-radius: 50%;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-container svg {
+    width: 30px;
+    height: 30px;
+}
+
+.text-content {
+    font-size: 1.2rem;
+}
+
+@media all and (max-width: 1300px) {
+    
+    .content, .reverse {
+        align-items: center;
+    }
+
+    .content p, .reverse p {
+        text-align: center;
+    }
+    
+    
+    .lastSection section, main section, .reverse {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .lastSection section p {
+        text-align: center;
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    header {
+        height: fit-content;
+        padding: 1rem 0;
+    }
+
+    header section h1 {
+        font-size: 2rem;
+    }
+
+    main section {
+        padding: 2rem;
+    }
+
+    .content h2, .reverse h2, .lastSection h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .picture img, .lastSection img {
+        width: 250px;
+    }
+    
+    .lastSection p {
+        text-align: center;
+    }
+
+    .icons {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .text-content {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+}
+
+@media all and (max-width: 350px) {
+    main section {
+        padding: 1rem;
+    }
+
+    .picture img, .lastSection img {
+        width: 230px;
+    }
+}
+
+/* 
+max-width
+
+min-width
+
+orientation: landscape
+
+hover:hover */
