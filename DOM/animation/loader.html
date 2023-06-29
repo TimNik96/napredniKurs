@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: black;
+            background: linear-gradient(90deg, rgba(9,121,118,1) 48%, rgba(0,255,25,1) 100%);
+            
+        }
+
+        .central {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+
+        .cut {
+            position: relative;
+            top: -25px;
+            width: 20px;
+            height: 52px;
+            transform-origin: bottom;
+            background-color: #fff;
+            animation-name: loader;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes loader {
+            from {
+                rotate: 0deg;
+            }
+
+            to {
+                rotate: 360deg;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="central">
+            <div class="cut"></div>
+        </div>
+    </div>
+</body>
+</html>
