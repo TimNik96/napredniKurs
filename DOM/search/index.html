@@ -18,6 +18,7 @@
             justify-content: center;
             align-items: center;
             row-gap: 2rem;
+            overflow: hidden;
         }
 
         .search {
@@ -46,11 +47,43 @@
             color: #61d2ffa7;
         }
 
+        .post-container {
+            box-shadow: 0 0 10px #61d2ffa7;
+            padding: 3em;
+            width: 650px;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            row-gap: 2rem;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #00a6ff;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #61d2ffa7;
+        }
+
         .post {
             padding: 1.5rem;
             color: #00a6ff;
             background-color: #61d2ffa7;
             width: 600px;
+            height: 150px;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -61,7 +94,7 @@
         }
 
         .post:hover {
-            transform: scale(1.15);
+            transform: scale(1.05);
         }
 
         .post-image {
@@ -101,6 +134,11 @@
             font-weight: bold;
             font-size: 1.5rem;
         }
+
+        .error {
+            color: #00a6ff;
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 <body>
@@ -112,15 +150,18 @@
         <input type="text" name="search" id="search-input" placeholder="search...">
     </label>
 
-    <section class="post">
-        <img class="post-image" src="./images/Glossy-Apple-Logo-PNG-Image.png" alt="apple">
-        <div class="post-likes">
-            <p class="post-likes-display">0</p>
-            <button class="post-likes-button">LIKE</button>
-        </div>
-        <p class="post-name">
-            POST 1
-        </p>
+    <section class="post-container">
+        <!-- EXAMPLE -->
+        <!-- <section class="post">
+            <img class="post-image" src="./images/Glossy-Apple-Logo-PNG-Image.png" alt="apple">
+            <div class="post-likes">
+                <p class="post-likes-display">0</p>
+                <button class="post-likes-button">LIKE</button>
+            </div>
+            <p class="post-name">
+                POST 1
+            </p>
+        </section> -->
     </section>
     
 </body>
