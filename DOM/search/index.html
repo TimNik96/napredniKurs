@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="index.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 2rem;
+        }
+
+        .search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .5rem 1rem;
+            border: 1px solid #00a6ff;
+            color: #00a6ff;
+            border-radius: 20px;
+        }
+
+        .search svg {
+            padding-right: 1rem;
+            width: 20px;
+        }
+
+        #search-input {
+            color: #00a6ff;
+            font-size: 1.3rem;
+            border: none;
+            outline: none;
+        }
+
+        ::placeholder {
+            color: #61d2ffa7;
+        }
+
+        .post {
+            padding: 1.5rem;
+            color: #00a6ff;
+            background-color: #61d2ffa7;
+            width: 600px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid #00a6ff;
+            border-radius: 30px;
+            box-shadow: -10px 10px 10px #c5c5c5;
+            transition: all .3s ease;
+        }
+
+        .post:hover {
+            transform: scale(1.15);
+        }
+
+        .post-image {
+            width: 150px;
+        }
+
+        .post-likes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 1rem;
+        }
+
+        .post-likes-display {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #00a6ff;
+        }
+
+        .post-likes-button {
+            color: #fff;
+            background-color: #00a6ff;
+            border-radius: 20px;
+            border: none;
+            padding: .5rem 1rem;
+            transition: all .3s ease;
+            box-shadow: -3px 3px 10px #0000002f;
+        }
+
+        .post-likes-button:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .post-name {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- DESIGN CUSTOM INPUT -->
+    <label for="search" class="search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" fill="#00a6ff"/>
+        </svg>
+        <input type="text" name="search" id="search-input" placeholder="search...">
+    </label>
+
+    <section class="post">
+        <img class="post-image" src="./images/Glossy-Apple-Logo-PNG-Image.png" alt="apple">
+        <div class="post-likes">
+            <p class="post-likes-display">0</p>
+            <button class="post-likes-button">LIKE</button>
+        </div>
+        <p class="post-name">
+            POST 1
+        </p>
+    </section>
+    
+</body>
+</html>
