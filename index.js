@@ -41,3 +41,24 @@
 // console.log("straße".toUpperCase().toLowerCase())
 // console.log("straße".toUpperCase().toLowerCase().length)
 
+// const niz = [1, 2, 3, 4, 5]
+
+// console.time('mojTajmer')
+// for(let i = 0; i < niz.length; i++) {
+//     if(niz[i] % 2 == 0)
+//         console.log(niz[i])
+// }
+// console.timeEnd('mojTajmer')
+
+// let niz = [1, 3, 5]
+// const niz_1 = [2, 4, 6]
+// niz = niz_1
+
+// niz_1.push(8)
+// console.log(niz, niz_1)
+
+// console.log(niz.filter(el => el % 2 === 0))
+
+// const niz = [1, 2, 3, 4, 5]
+
+// const noviNiz = niz.filter(el => el % 2 !== 0).map(el => el ** 2).sort((a, b) => b - a)

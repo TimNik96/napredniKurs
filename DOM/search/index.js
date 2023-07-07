@@ -52,4 +52,3 @@ search.addEventListener('keyup', () => {
 
     RenderPosts(result, postContainer)
 })
-
